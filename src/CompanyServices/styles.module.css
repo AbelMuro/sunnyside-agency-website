@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+}
+
+.graphicDesign, .photography {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 59px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.graphicDesign{
+    background-image: url('./images/image-graphic-design.jpg');
+}
+
+.content{
+    width: 339px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.graphicDesign .title{
+    color: #24554A;
+    text-align: center;
+    font-family: var(--fraunces);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.graphicDesign .desc{
+    color: #3E7467;
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 168.75%;
+    letter-spacing: -0.114px;
+}
+
+
+.photography{
+    background-image: url('./images/image-photography.jpg');
+}
+
+.photography .title{
+    color: rgba(5, 44, 59, 0.75);
+    text-align: center;
+    font-family: var(--fraunces);
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.photography .desc{
+    color: #19536C;
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 168.75%;
+    letter-spacing: -0.114px;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+
+    .graphicDesign, .photography{
+        width: 100%;
+    }
+}
+
+@media(max-width: 540px){
+    .graphicDesign{
+        background-image: url('./images/image-graphic-design-mobile.jpg');
+    }
+
+    .photography{
+        background-image: url('./images/image-photography-mobile.jpg');
+    }
+}

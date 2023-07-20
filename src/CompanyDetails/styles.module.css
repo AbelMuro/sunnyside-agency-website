@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+}
+
+.textbox{
+    width: 50%;
+    height: 720px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+}
+
+.content{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.image{
+    width: 50%;
+    object-fit: cover;
+}
+
+.title{
+    color: #24303E;
+    font-family: var(--fraunces);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.286px;
+}
+
+.desc{
+    color: #808397;
+    font-family: var(--barlow);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.667%;
+    letter-spacing: -0.129px;
+}
+
+.learnMore{
+    width: 120px;
+    color: #24303E;
+    font-family: var(--fraunces);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 166.667%;
+    letter-spacing: 1px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.learnMore span{
+    position: relative;
+    z-index: var(--close);
+}
+
+.bar{
+    position: absolute;
+    z-index: var(--far);
+    left: -10px;
+    bottom: 2px;
+    width: 137px;
+    height: 10px;
+    border-radius: 28px;
+    opacity: 0.25;
+}
+
+.learnMore:hover .bar{
+    opacity: 1;
+}
+
+@media(max-width: 1000px){
+    .content{
+        width: 80%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .textbox{
+        height: 475px;
+    }
+}
+
+@media(max-width: 730px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .textbox{
+        width: 100%;
+    }
+    .title, .desc{
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+    }
+    .learnMore{
+        align-self: center;
+    }
+}

@@ -1,0 +1,90 @@
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 88px auto;
+    position: relative;
+}
+
+.logo{
+    width: 123px;
+    object-fit: contain;
+}
+
+.hamburger{
+    width: 24px;
+    height: 18px;
+    mask-image: url('./icons/icon-hamburger.svg');
+    -webkit-mask-image: url('./icons/icon-hamburger.svg');
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+    -webkit-mask-size: 24px 18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dialog{
+    border: none;
+    border-top: 24px solid #3dbeff;
+    border-right: 24px solid white;
+    width: 329px;
+    height: 329px;
+    padding-top: 39px; 
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    transform: scale(0);
+}
+
+
+.link{
+    align-self: center;
+    width: 80px;
+    text-align: center;
+    color: #808397;
+    font-family: var(--barlow);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.143px;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: #FBD600;
+}
+
+.contact{
+    width: 140px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FBD600;
+    color: #24303E;
+    font-family: var(--fraunces);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.667%;
+    letter-spacing: -0.107px;
+    text-transform: uppercase;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-color: rgba(251, 214, 0, 0.4)
+}
