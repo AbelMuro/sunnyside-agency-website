@@ -5,7 +5,7 @@
 .textbox{
     width: 50%;
     height: 720px;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
