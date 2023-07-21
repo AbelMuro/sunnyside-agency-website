@@ -1,0 +1,91 @@
+.container{
+    height: 350px;
+    background-color: #90D4C6;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    width: 170px;
+    object-fit: contain;
+}
+
+.links{
+    display: flex;
+    gap: 57px;
+    list-style-type: none;
+    margin-bottom: 48px;
+}
+
+.link{
+    color: #458D7E;
+    font-family: var(--barlow);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138.889%;
+    letter-spacing: -0.129px;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: white;
+}
+
+.socialLinks{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.socialLink{
+    width: 20px;
+    height: 20px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: #2C7566;
+    cursor: pointer;
+}
+
+.socialLink:hover{
+    background-color: white;
+}
+
+
+.socialLink:nth-of-type(1){
+    mask-image: url('./icons/icon-facebook.svg');
+    -webkit-mask-image: url('./icons/icon-facebook.svg');
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+}
+
+.socialLink:nth-of-type(2){
+    mask-image: url('./icons/icon-instagram.svg');
+    -webkit-mask-image: url('./icons/icon-instagram.svg');
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+}
+
+.socialLink:nth-of-type(3){
+    mask-image: url('./icons/icon-twitter.svg');
+    -webkit-mask-image: url('./icons/icon-twitter.svg');
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+}
+
+.socialLink:nth-of-type(4){
+    mask-image: url('./icons/icon-pinterest.svg');
+    -webkit-mask-image: url('./icons/icon-pinterest.svg');
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+}

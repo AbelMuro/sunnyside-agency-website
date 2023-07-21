@@ -3,6 +3,8 @@ import PreLoadImages from './PreLoadImages';
 import Header from './Header';
 import CompanyDetails from './CompanyDetails';
 import CompanyServices from './CompanyServices';
+import Artwork from './Artwork';
+import Footer from './Footer';
 import ClientTestimonials from './ClientTestimonials';
 import './styles.css';
 
@@ -33,6 +35,8 @@ function App() {
             />
             <CompanyServices/>
             <ClientTestimonials/>
+            <Artwork/>
+            <Footer/>
         </>
     )
 }

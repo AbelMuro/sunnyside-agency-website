@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 800px;
+    height: 100vh;
     padding-top: 34px;
     background-image: url('./images/image-header.jpg');
     background-position: center;
